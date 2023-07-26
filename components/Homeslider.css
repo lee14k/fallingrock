@@ -1,0 +1,47 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .indicator {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  
+  .indicator-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 0 5px;
+    opacity: 0.5;
+  }
+  
+  .indicator-dot.active {
+    opacity: 1;
+  }
+  
