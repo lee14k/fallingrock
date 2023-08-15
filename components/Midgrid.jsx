@@ -5,26 +5,16 @@ function Midgrid() {
   return (
     <div className="container">
       <div className="grid">
-        <div className="gridItem">
-          <Image
-            src="/frcbooks.jpeg"
-            alt="Description of image 1"
-            width={500}
-            height={300}
-            layout="responsive"
-          />
+        <div className="gridItemone">
+                 </div>
 
-          <h1 className="header1">Your Header 1</h1>
+          <div className="one">
+            <h1 className="header1">Your Header 1</h1>
         </div>
-        <div className="gridItem rowReverse">
-          <Image
-            src="/frcflowers.jpeg"
-            alt="Description of image 2"
-            width={500}
-            height={300}
-            layout="responsive"
-          />
-          <h1 className="header2">Your Header 2</h1>
+
+       
+          <h1 className="header2 two">Your Header 2</h1>
+     <div className="gridItemtwo rowReverse">
         </div>
       </div>
     </div>

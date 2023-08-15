@@ -43,21 +43,22 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>Contact Us</li>
-          <li>Events</li>
-          <li>
-            <Link href="/thelodge">Coffee</Link>
+            <Link href="/About">About</Link>
           </li>
           <li>
-            <Link href="/sunrisesuite">Food</Link>
+            <Link href="/Contact">Contact Us</Link></li>
+          <li><Link href="/Events">Events</Link></li>
+          <li>
+            <Link href="/Coffee">Coffee</Link>
           </li>
           <li>
-            <Link href="/cottageone">Books</Link>
+            <Link href="/Food">Food</Link>
           </li>
           <li>
-            <Link href="/cottagetwo">Store</Link>
+            <Link href="/Books">Books</Link>
+          </li>
+          <li>
+            <Link href="/Store">Store</Link>
           </li>
         </ul>
       )}
