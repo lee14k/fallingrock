@@ -1,10 +1,11 @@
 import About from 'components/About.jsx'
+import Footer from 'components/Footer'
+
 export default function Aboutpg ( ) {
     return (
         <div>
-            <h1>About</h1>
             <About/>
-
+<Footer/>
         </div>
     )
 }

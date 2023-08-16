@@ -52,7 +52,7 @@ function Navbar() {
             <Link href="/Coffee">Coffee</Link>
           </li>
           <li>
-            <Link href="/Food">Food</Link>
+            <Link href="/Menu">Menu</Link>
           </li>
           <li>
             <Link href="/Books">Books</Link>
