@@ -8,10 +8,7 @@ export default function Home() {
   return (
    <div>
 <Navbar/>
-<Homeslider/>
-<Mid/>
-<Midgrid/>
-<Footer/>
+
    </div>
   )
 }
