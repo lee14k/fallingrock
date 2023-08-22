@@ -1,5 +1,15 @@
 .mid {
-    background-color:#8ba2e0;
-    display:flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+  padding-top: 200px;
+  background-image: url("/border.png");
+    background-repeat: no-repeat;
+    background-size:100% auto;
+}
+.midp {
+      margin: 10px 90px 20px;
+
 }

@@ -5,14 +5,13 @@ const navigation = {
     { name: "Events", href: "/Events" },
     { name: "Food", href: "/Food" },
     { name: "Contact", href: "/Contact" },
-    { name: "Coffee", href: "/Coffee" },
     { name: "Books", thref: "/Books" },
     { name: "Store", href: "/Store" },
   ],
   social: [
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/fallingrockcafe",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path

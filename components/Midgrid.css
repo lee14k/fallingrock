@@ -2,107 +2,106 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width: 100%;
-  margin:0;
+  margin: 0;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-  /* Adjust as needed */
-  border: solid;
-  margin:0;
-}
 
 .one {
-  background-image: url("/bakerytextureone.png");
+  background-image: url("/fillpic.png");
   background-size: 500px;
-  width: 500px;
+  width: 900px;
   height: 500px;
-    margin:0;
-      display:flex;
-    justify-content:center;
-    align-items:center;
- 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .oneframe {
- clip-path: 
-    polygon(
-      0% 5%,     /* top left */
-      5% 0%,     /* top left */
-      95% 0%,    /* top right */
-      100% 5%,   /* top right */
-      100% 95%,  /* bottom right */
-      95% 100%,  /* bottom right */
-      5% 100%,   /* bottom left */
-      0 95%      /* bottom left */
-    );
-    background-color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border:solid black;
-    height:400px;
-    width:250px;
+  clip-path: polygon(
+    0% 5%,
+    /* top left */ 5% 0%,
+    /* top left */ 95% 0%,
+    /* top right */ 100% 5%,
+    /* top right */ 100% 95%,
+    /* bottom right */ 95% 100%,
+    /* bottom right */ 5% 100%,
+    /* bottom left */ 0 95% /* bottom left */
+  );
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  height: 400px;
+  width: 250px;
 }
 
 .two {
-  background-image: url("/bakerytextureone.png");
+  background-image: url("/fillpic.png");
   background-size: 500px;
-  width: 500px;
+  width: 600px;
   height: 500px;
-  margin:0;
-        margin-left:80px;
-
-
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-@media screen and (max-width: 700px) {
+
+.gridItemone {
+  background-image: url("/frcbookspickme.jpeg");
+  background-size: cover;
+  height: 500px;
+  width: 600px;
+  margin: 0;
+}
+
+.gridItemtwo {
+  background-image: url("/frcbookandcoffee.jpeg");
+  background-size: cover;
+  height: 500px;
+  width: 900px;
+  margin: 0;
+  background-position:center bottom;
+}
+@media screen and (max-width: 1200px) {
+* {
+  max-height:100%;
+}
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    justify-content:center;
+    align-items:center;
   }
-  .gridItem {
-    flex-direction: column;
-  }
-  .rowReverse {
-    flex-direction: column;
-  }
+
+ 
   .container {
     flex-direction: column;
   }
   .one {
-    background-image: url("/bakerytextureone.png");
     background-size: 500px;
-    width: 100%;
+    width: 1200px;
     height: 500px;
-    background-size:cover;
+    background-size: contain;
+    margin:0;
+
   }
 
   .two {
-    background-image: url("/bakerytexturetwo.png");
-    width: 100%;
+    background-size: 500px;
+    width: 1200px;
     height: 500px;
-    background-repeat:no-repeat;
+    background-size: contain;
+    margin:0;
+    
+  }
+  .gridItemtwo {
+    width:1200px;
+  }
+  .gridItemone {
+    width:1200px;
     background-size:cover;
   }
-}
-
-.gridItemone {
-background-image: url("/frcbooks.jpeg");
-background-size:cover;
-height:500px;
-width:500px;
-margin:0;
-      margin-left:80px;
-
-}
-
-.gridItemtwo {
-background-image: url("/frcflowers.jpeg");
-background-size:cover;
-height:500px;
-width:500px;
-margin:0;
 }

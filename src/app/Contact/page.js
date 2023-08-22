@@ -1,4 +1,5 @@
 import Navbar from "components/Navbar"
+import Footer from "../../../components/Footer"
 /*
   This example requires some changes to your config:
   
@@ -17,9 +18,9 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 
 export default function Contact() {
   return (
-    <div className="relative isolate bg-white">
+    <div className="relative isolate bg-white contactwrap ">
         <Navbar/>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 h-500px">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
@@ -48,8 +49,9 @@ export default function Contact() {
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-              integer elementum id sem. Arcu sed malesuada et magna.
+         Feel free to stop by for a visit or contact one of us below with any questions, comments or general inquires.
+
+You can always reach us by phone at (906) 387-3008, and of course you can find us in Munising along the shores of Lake Superior.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
@@ -58,9 +60,8 @@ export default function Contact() {
                   <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
+104 East Munising Avenue                  <br />
+                  Munising, MI 949862
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -70,25 +71,15 @@ export default function Contact() {
                 </dt>
                 <dd>
                   <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
-                    +1 (555) 234-5678
+                    +1 (906) 387-3008
                   </a>
                 </dd>
               </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Email</span>
-                  <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                </dt>
-                <dd>
-                  <a className="hover:text-gray-900" href="mailto:hello@example.com">
-                    hello@example.com
-                  </a>
-                </dd>
-              </div>
+            
             </dl>
           </div>
         </div>
-        <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+        <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 contactform">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -173,6 +164,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
+      <Footer/>
     </div>
   )
 }

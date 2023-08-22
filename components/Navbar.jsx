@@ -48,9 +48,7 @@ function Navbar() {
           <li>
             <Link href="/Contact">Contact Us</Link></li>
           <li><Link href="/Events">Events</Link></li>
-          <li>
-            <Link href="/Coffee">Coffee</Link>
-          </li>
+         
           <li>
             <Link href="/Menu">Menu</Link>
           </li>

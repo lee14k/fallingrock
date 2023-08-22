@@ -3,6 +3,9 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
   
   .slide {
@@ -17,7 +20,7 @@
   }
   
   .slide.active {
-    opacity: 1;
+    opacity: 0.5;
     z-index: 2;
     transition: opacity 1s ease-in-out;
   }
@@ -45,3 +48,10 @@
     opacity: 1;
   }
   
+  .overlay-logo {
+  position: absolute;
+  display:flex;
+  height: auto;
+  z-index: 2; /* This ensures that the logo appears on top of the slides */
+  opacity: 1; /* Optional: to make the logo slightly transparent */
+}

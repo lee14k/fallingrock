@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react";
 import "./Homeslider.css";
+import Image from "next/image";
 
 const images = [
   './frc.jpeg', // replace with your image URLs
@@ -31,6 +32,12 @@ function Homeslider() {
           style={{ backgroundImage: `url(${image})` }}
         />
       ))}
+          <Image
+          src='/logo.png'
+          height={500}
+          width={500}
+          className="overlay-logo"
+          />
       <div className="indicator">
         {images.map((_, index) => (
           <div
